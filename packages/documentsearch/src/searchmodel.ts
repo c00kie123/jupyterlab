@@ -171,13 +171,6 @@ export class SearchDocumentModel
   get useRegex(): boolean {
     return this._useRegex;
   }
-  set useRegex(v: boolean) {
-    if (this._useRegex !== v) {
-      this._useRegex = v;
-      this.stateChanged.emit();
-      this.refresh();
-    }
-  }
 
   /**
    * Whether to match whole words or not.
